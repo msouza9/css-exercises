@@ -10,6 +10,24 @@ body, html {
   box-sizing: border-box;
 }
 
+/* New */
+.container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(2, 1fr) 5fr 1fr;
+}
+
+/**
+- The grid has two columns
+- The grid has four rows
+- The grid tracks do not use static sizes (no pixels!)
+- The second column is three times larger than the other
+- The third row is five times larger than the others
+- The rows and columns stretch wider when making the browser window bigger
+- The rows and columns stretch taller when making the browser window smaller
+*/
+
 .container div {
   padding: 15px;
   font-size: 32px;
